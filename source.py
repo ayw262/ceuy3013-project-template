@@ -128,4 +128,4 @@ def beamdesign():
         index = index - 9
     size = str(index + 3)
 
-    print("Use a width of " + str(width) + " feet, height of " + str(height) + " feet, and effective depth of " + str(effdepth1) + " feet with " + numberofbars + " #" + size + " bars")
+    print("Use a width of " + str(width) + " inches, height of " + str(height) + " inches, and effective depth of " + str(effdepth1) + " inches with " + numberofbars + " #" + size + " bars")
