@@ -100,12 +100,13 @@ def beamdesign():
         if item != 0:
           giantlist.append(sublist[item])
 
+    # Finds smallest area of steel that is larger than required
     while areaneeded > giantlist[index]:
       index = index + 1
-
+    # Determines number of bars needed (by which row in the table the value is)
     bararea = giantlist[index]
     numberofbars = str(math.ceil(index/9))
-
+    # Determines size of the bar by what column the selected value is in
     while index > 9:
       index = index - 9
     size = str(index + 3)
