@@ -2,4 +2,9 @@
 # of importing a class from "source.py", instantiating a new object and printing
 # that object. Replace the code below with your own.
 
-import source
+import source as s
+
+def main():
+    s.beamdesign()
+
+main()
