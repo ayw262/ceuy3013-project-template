@@ -34,5 +34,15 @@ Inputs:
 - Load combination factors
 
 
+Outputs:
+------
+
+- Beam height
+- Beam width
+- Beam effective depth
+- Number of steel reinforcing bars
+- Size of steel reinforcing bars
+
+
 Example:
 -----
