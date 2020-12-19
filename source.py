@@ -30,7 +30,8 @@ def beamdesign():
     df7 = pd.read_csv(fileA11)
 
     # Strength of concrete and steel needed
-    print("Enter compressive strength and yield strength in psi (do not include commas; refer to README section for available values)")
+    print("Enter compressive strength and yield strength in psi (refer to README section for permitted values)")
+    print("==========") # For better readability
     cstrength1 = int(input("Enter f'c: "))
     yieldstrength1 = int(input("Enter fy: "))
 
@@ -51,6 +52,7 @@ def beamdesign():
 
     # Loads needed to be supported
     print("Enter loads in kips and lengths in feet")
+    print("==========")
     pointDL  = float(input("Enter point dead load: "))
     pointLL  = float(input("Enter point live load: "))
     left = float(input("Enter distance from left end of the beam to the point load: "))
