@@ -45,6 +45,7 @@ Outputs:
 - Number of steel reinforcing bars
 - Size of steel reinforcing bars
 *Visualized output*
+
 ![SolutionEx](SolutionEx.png)
 
 
