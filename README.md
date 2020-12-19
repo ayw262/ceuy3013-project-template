@@ -11,7 +11,6 @@ and the size and number of reinforcing steel bars required.
 Note: This program can only be used for point loads loaded at the same point of the beam and distributed loads across the entire length of the beam.
 
 Some things to be noted before running the program:
------------
 
 - All inputs are required.
 - All values must be inputted without commas.
@@ -22,24 +21,18 @@ Some things to be noted before running the program:
 
 
 Inputs:
+------
 
-compressive strength of concrete (psi)
-
-yield stress of steel (psi)
-
-point dead load
-
-point live load
-
-distance from the left end of the beam to the point loads
-
-length of entire beam
-
-distributed dead load
-
-distributed live load
-
-load combination factors
+- compressive strength of concrete (psi)
+- yield stress of steel (psi)
+- point dead load (kips)
+- point live load (kips)
+- distance from the left end of the beam to the point loads (feet)
+- length of entire beam (feet)
+- distributed dead load (kips/ft)
+- distributed live load (kips/ft)
+- load combination factors
 
 
 Example:
+-----
