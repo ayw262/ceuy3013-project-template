@@ -47,5 +47,5 @@ Outputs:
 Example:
 -----
 The following is an example of the type of problem that can be solved using this program.
-*Taken from Reinforced Concrete Design 9e textbook by Abi Aghayere*
 ![PythonExample](PythonExample.png)
+*Taken from Reinforced Concrete Design 9e textbook by Abi Aghayere*
