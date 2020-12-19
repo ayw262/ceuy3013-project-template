@@ -37,9 +37,9 @@ Inputs:
 Outputs:
 ------
 
-- Beam height
-- Beam width
-- Beam effective depth
+- Beam height (inches)
+- Beam width (inches)
+- Beam effective depth (inches)
 - Number of steel reinforcing bars
 - Size of steel reinforcing bars
 
