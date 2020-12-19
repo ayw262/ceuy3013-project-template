@@ -46,4 +46,5 @@ Outputs:
 
 Example:
 -----
+The following is an example of the type of problem that can be solved using this program...
 ![PythonExample](PythonExample.png)
