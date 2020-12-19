@@ -8,8 +8,8 @@ and the size and number of reinforcing steel bars required.
 
 All values must be inputted without commas.
 
-Permitted values for compressive strength:
-  3000, 4000, 5000, and 6000
+Permitted values for compressive strength in psi:
+  3000, 4000, and 5000 (5000 only works with 60000)
 
-Permitted values for yield strength:
-  40000, 50000, 60000, and 750000
+Permitted values for yield strength in psi:
+  40000 and 60000

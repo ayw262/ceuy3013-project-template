@@ -28,21 +28,10 @@ def beamdesign():
     df6 = pd.read_csv(fileA10)
     df7 = pd.read_csv(fileA11)
 
-    # Loads needed to be supported
+    # Strength of concrete and steel needed
     print("Enter compressive strength and yield strength in psi (do not include commas; refer to README section for available values)")
     cstrength1 = int(input("Enter f'c: "))
     yieldstrength1 = int(input("Enter fy: "))
-
-    print("Enter loads in kips and lengths in feet")
-    pointDL  = float(input("Enter point dead load: "))
-    pointLL  = float(input("Enter point live load: "))
-    left = float(input("Enter distance from left end of the beam to the point load: "))
-    length = float(input("Enter beam length (must be larger than distance from left end of the beam to the point load): "))
-    right = length - left
-    distDL  = float(input("Enter distributed dead load: "))
-    distLL  = float(input("Enter distributed live load: "))
-    deadfactor = float(input("Enter the dead load combination factor (LRFD is 1.2): "))
-    livefactor = float(input("Enter the live load combination factor (LRFD is 1.6): "))
 
     # Choosing which table to use according to user input
     if (cstrength1 == 3000) & (yieldstrength1 == 40000):
@@ -53,8 +42,22 @@ def beamdesign():
         table = df5
     elif (cstrength1 == 4000) & (yieldstrength1 == 60000):
         table = df6
-    else:
+    elif (cstrength1 == 5000) & (yieldstrength1 == 60000):
         table = df7
+    else:
+        print("Invalid compressive strength and yield strength combination; re-enter inputs")
+
+    # Loads needed to be supported
+    print("Enter loads in kips and lengths in feet")
+    pointDL  = float(input("Enter point dead load: "))
+    pointLL  = float(input("Enter point live load: "))
+    left = float(input("Enter distance from left end of the beam to the point load: "))
+    length = float(input("Enter beam length (must be larger than distance from left end of the beam to the point load): "))
+    right = length - left
+    distDL  = float(input("Enter distributed dead load: "))
+    distLL  = float(input("Enter distributed live load: "))
+    deadfactor = float(input("Enter the dead load combination factor (LRFD is 1.2): "))
+    livefactor = float(input("Enter the live load combination factor (LRFD is 1.6): "))
 
     # Calculating ultimate moment
     ultpointload = (deadfactor * pointDL) + (livefactor * pointLL)
