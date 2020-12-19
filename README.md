@@ -1,10 +1,12 @@
-##Reinforced Concrete Beam Design
+Reinforced Concrete Beam Design:
 
 This is a program for reinforced concrete beam design.
-The user inputs the compressive strength and yield strength of the concrete,
+The user inputs the compressive strength and yield strength of the concrete and steel,
 along with the intended dead and live loads and load factors.
 This program will return the beam dimensions (width, height, effective depth)
 and the size and number of reinforcing steel bars required.
+
+Some things to be noted before running the program:
 
 All values must be inputted without commas.
 

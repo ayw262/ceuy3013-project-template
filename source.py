@@ -58,8 +58,8 @@ def beamdesign():
     right = length - left
     distDL  = float(input("Enter distributed dead load: "))
     distLL  = float(input("Enter distributed live load: "))
-    deadfactor = float(input("Enter the dead load combination factor (LRFD is 1.2): "))
-    livefactor = float(input("Enter the live load combination factor (LRFD is 1.6): "))
+    deadfactor = float(input("Enter the dead load combination factor (LRFD is 1.2, ASD is 1.0): "))
+    livefactor = float(input("Enter the live load combination factor (LRFD is 1.6, ASD is 1.0): "))
 
     # Calculating ultimate moment
     ultpointload = (deadfactor * pointDL) + (livefactor * pointLL)
