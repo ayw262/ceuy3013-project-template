@@ -11,7 +11,7 @@ Some things to be noted before running the program:
 All values must be inputted without commas.
 
 Permitted values for compressive strength in psi:
-  3000, 4000, and 5000 (5000 only works with 60000)
+  3000, 4000, and 5000 (5000 only works with a yield strength of 60000)
 
 Permitted values for yield strength in psi:
   40000 and 60000
