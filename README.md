@@ -2,8 +2,6 @@ Reinforced Concrete Beam Design:
 -------------
 -------------
 
-  import os
-
 This is a program for reinforced concrete beam design.
 The user inputs the compressive strength and yield strength of the concrete and steel,
 along with the intended dead and live loads and load factors.
