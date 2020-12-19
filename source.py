@@ -1,6 +1,7 @@
 import math
 import pandas as pd
 import os
+import sys
 
 def open_file(file_name):
     path_to_input = "./input/csvTables"
@@ -46,6 +47,7 @@ def beamdesign():
         table = df7
     else:
         print("Invalid compressive strength and yield strength combination; re-enter inputs")
+        beamdesign()
 
     # Loads needed to be supported
     print("Enter loads in kips and lengths in feet")
@@ -128,4 +130,5 @@ def beamdesign():
         index = index - 9
     size = str(index + 3)
     # Final output
-    print("For the beam dimensions, use a width of " + str(width) + " inches, height of " + str(height) + " inches. At the effective depth of " + str(effdepth1) + " inches use " + numberofbars + " #" + size + " bars for reinforcement.")
+    print("For the beam dimensions, use a width of " + str(width) + " inches, height of " + str(height) + " inches. At the effective depth of " + str(effdepth1) + " inches, use " + numberofbars + " #" + size + " bars for reinforcement.")
+    sys.exit()
