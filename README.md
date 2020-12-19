@@ -23,15 +23,15 @@ Some things to be noted before running the program:
 Inputs:
 ------
 
-- compressive strength of concrete (psi)
-- yield stress of steel (psi)
-- point dead load (kips)
-- point live load (kips)
-- distance from the left end of the beam to the point loads (feet)
-- length of entire beam (feet)
-- distributed dead load (kips/ft)
-- distributed live load (kips/ft)
-- load combination factors
+- Compressive strength of concrete (psi)
+- Yield stress of steel (psi)
+- Point dead load (kips)
+- Point live load (kips)
+- Distance from the left end of the beam to the point loads (feet)
+- Length of entire beam (feet)
+- Distributed dead load (kips/ft)
+- Distributed live load (kips/ft)
+- Load combination factors
 
 
 Example:
