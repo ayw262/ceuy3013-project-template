@@ -14,6 +14,7 @@ Some things to be noted before running the program:
 
 - All inputs are required.
 - All values must be inputted without commas.
+- The final output places the reinforcing bars at the bottom of the beam.
 - Permitted values for concrete compressive strength in psi:
   3000, 4000, and 5000 (5000 only works with a yield strength of 60000)
 - Permitted values for steel yield strength in psi:
@@ -43,6 +44,8 @@ Outputs:
 - Beam effective depth (inches)
 - Number of steel reinforcing bars
 - Size of steel reinforcing bars
+*Visualized output*
+![SolutionEx](SolutionEx.png)
 
 
 Example:
