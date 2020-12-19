@@ -130,5 +130,6 @@ def beamdesign():
         index = index - 9
     size = str(index + 3)
     # Final output
-    print("For the beam dimensions, use a width of " + str(width) + " inches, height of " + str(height) + " inches. At the effective depth of " + str(effdepth1) + " inches, use " + numberofbars + " #" + size + " bars for reinforcement.")
+    print("==========")
+    print("For the beam dimensions, use a width of " + str(width) + " inches and height of " + str(height) + " inches. At the effective depth of " + str(effdepth1) + " inches, use " + numberofbars + " #" + size + " bars for reinforcement.")
     sys.exit()

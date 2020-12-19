@@ -8,7 +8,7 @@ along with the intended dead and live loads and load factors.
 This program will return the beam dimensions (width, height, effective depth)
 and the size and number of reinforcing steel bars required.
 
-Note: This program can only be used for point loads loaded at the same point of the beam and distributed loads that are applied across the entire length of the beam.
+*Note: This program can only be used for point loads loaded at the same point of the beam and distributed loads that are applied across the entire length of the beam.*
 
 Some things to be noted before running the program:
 
