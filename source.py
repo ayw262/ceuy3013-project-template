@@ -1,9 +1,6 @@
 import math
 import pandas as pd
 import os
-# from google.colab import drive
-# Creating a dataframe for each Excel sheet
-#drive.mount('/content/drive')
 
 def open_file(file_name):
     path_to_input = "./input/csvTables"
@@ -13,7 +10,7 @@ def open_file(file_name):
 
 def beamdesign():
 
-    #open all files
+    # Open all files
     fileA2 = open_file("TableA2.csv")
     fileA5 = open_file("TableA5.csv")
     fileA7 = open_file("TableA7.csv")
@@ -32,7 +29,7 @@ def beamdesign():
     df7 = pd.read_csv(fileA11)
 
     # Loads needed to be supported
-    print("Enter compressive strength and yield strength in psi (do not include commas)")
+    print("Enter compressive strength and yield strength in psi (do not include commas; refer to README section for available values)")
     cstrength1 = int(input("Enter f'c: "))
     yieldstrength1 = int(input("Enter fy: "))
 
@@ -40,12 +37,12 @@ def beamdesign():
     pointDL  = float(input("Enter point dead load: "))
     pointLL  = float(input("Enter point live load: "))
     left = float(input("Enter distance from left end of the beam to the point load: "))
-    length = float(input("Enter beam length: "))
+    length = float(input("Enter beam length (must be larger than distance from left end of the beam to the point load): "))
     right = length - left
     distDL  = float(input("Enter distributed dead load: "))
     distLL  = float(input("Enter distributed live load: "))
-    deadfactor = float(input("Enter the dead load combination factor: "))
-    livefactor = float(input("Enter the live load combination factor: "))
+    deadfactor = float(input("Enter the dead load combination factor (LRFD is 1.2): "))
+    livefactor = float(input("Enter the live load combination factor (LRFD is 1.6): "))
 
     # Choosing which table to use according to user input
     if (cstrength1 == 3000) & (yieldstrength1 == 40000):
@@ -127,5 +124,5 @@ def beamdesign():
     while index > 9:
         index = index - 9
     size = str(index + 3)
-
-    print("Use a width of " + str(width) + " inches, height of " + str(height) + " inches, and effective depth of " + str(effdepth1) + " inches with " + numberofbars + " #" + size + " bars")
+    # Final output
+    print("For the beam dimensions, use a width of " + str(width) + " inches, height of " + str(height) + " inches. At the effective depth of " + str(effdepth1) + " inches use " + numberofbars + " #" + size + " bars for reinforcement.")
