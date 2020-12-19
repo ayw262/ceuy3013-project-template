@@ -48,7 +48,7 @@ def beamdesign():
         table = df7
     else:
         print("Invalid compressive strength and yield strength combination; re-enter inputs")
-        beamdesign()
+        beamdesign() # If there is no chart for the inputs, the program will restart
 
     # Loads needed to be supported
     print("Enter loads in kips and lengths in feet")
